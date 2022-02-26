@@ -1,27 +1,27 @@
 {
     "team": [
         {
-            "name": "Team Member Name 1",
-            "email": "email@eng.pdn.ac.lk",
-            "eNumber": "E/yy/xxx",
-            "github_profile":"#",
-            "linkedin_profile":"#",
+            "name": "Madush Chandrasena",
+            "email": "e17040@eng.pdn.ac.lk",
+            "eNumber": "E/17/040",
+            "github_profile":"https://github.com/madUSH1198",
+            "linkedin_profile":"https://www.linkedin.com/in/madush-dilshan-4a37b2218",
             "website": "#"
         },
         {
-            "name": "Team Member Name 2",
-            "email": "email@eng.pdn.ac.lk",
-            "eNumber": "E/yy/xxx",
-            "github_profile":"#",
-            "linkedin_profile":"#",
+            "name": "Shashini Upekha",
+            "email": "e17356@eng.pdn.ac.lk",
+            "eNumber": "E/17/356",
+            "github_profile":"https://github.com/ShashiniUpekha/",
+            "linkedin_profile":"https://www.linkedin.com/in/shashini-upekha-46209a219/",
             "website": "#"
         },
         {
-            "name": "Team Member Name 3",
-            "email": "email@eng.pdn.ac.lk",
-            "eNumber": "E/yy/xxx",
-            "github_profile":"#",
-            "linkedin_profile":"#",
+            "name": "Hasara Wijesooriya",
+            "email": "e17407@eng.pdn.ac.lk",
+            "eNumber": "E/17/407",
+            "github_profile":"https://github.com/WijesooriyaHD",
+            "linkedin_profile":"https://www.linkedin.com/in/hasara-wijesooriya-129880218",
             "website": "#"
         }
     ],
