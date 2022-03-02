@@ -2,11 +2,6 @@ ___
 # Prediction of Risks Associated with Mass Corona Vaccination
 ___
 
-<center>
-  <img src = "https://tse4.mm.bing.net/th?id=OIP.9v_G0K-kT_nMmPUor02jzwHaDD&pid=Api&P=0&w=404&h=166" style="width:900px;height:280px;></img>
- </center>
-
-
 ## Introduction
 <p align="justify">There is a trend among people not to get COVID-19 vaccinations. Because of the differing viewpoints of the various parties involved, society is skeptical of obtaining it. However, there is no research being done into the vaccination's side effects or the causes of illnesses and deaths. This project will look into the specific criteria or risks that come with vaccinations. So, this will help people to get an idea to check whether to take the vaccines or not. 
 
