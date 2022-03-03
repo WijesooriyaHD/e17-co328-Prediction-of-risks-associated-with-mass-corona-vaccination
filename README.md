@@ -5,13 +5,6 @@ ___
 ## Introduction
 <p align="justify">There is a trend among people not to get COVID-19 vaccinations. Because of the differing viewpoints of the various parties involved, society is skeptical of obtaining it. However, there is no research being done into the vaccination's side effects or the causes of illnesses and deaths. This project will look into the specific criteria or risks that come with vaccinations. So, this will help people to get an idea to check whether to take the vaccines or not. 
 
-## Objectives
-<p align="justify">To derive and validate risk prediction algorithms to estimate the risk of covid-19 related mortality and hospital admission and side effects after the vaccination of people after one or two doses after the booster dose of covid-19 vaccination.
-By,
-Creating  a comprehensive data set with data mining and other techniques 
-Investigating the effects of Demographic Factors, Health Conditions, Genetical influences, and Habitual influences for risks associated with mass corona vaccination.
-Developing an Interactive Web site with all the data, statistics, analytics, and visualization.
-
 ## Problem 
 <p align="justify">Society is doubtful of getting COVID-19 vaccines due to spreading opinions,  various myths, and fear of getting side effects.
 the above-mentioned problem. (what are their fears about getting the vaccine, 
