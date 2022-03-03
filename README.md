@@ -12,9 +12,6 @@ Creating  a comprehensive data set with data mining and other techniques
 Investigating the effects of Demographic Factors, Health Conditions, Genetical influences, and Habitual influences for risks associated with mass corona vaccination.
 Developing an Interactive Web site with all the data, statistics, analytics, and visualization.
 
-## Target Customers
-People who are going to take the COVID-19 vaccines.
-
 ## Problem 
 <p align="justify">Society is doubtful of getting COVID-19 vaccines due to spreading opinions,  various myths, and fear of getting side effects.
 the above-mentioned problem. (what are their fears about getting the vaccine, 
@@ -53,3 +50,7 @@ Application features and description of the web application
 
 Benefits of this proposed solution
 The user will be able to get a clear idea about the risks associated with COVID-19 vaccination.
+	
+
+## Target Customers
+People who are going to take the COVID-19 vaccines.
