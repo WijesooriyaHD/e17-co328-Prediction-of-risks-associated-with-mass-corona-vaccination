@@ -27,18 +27,18 @@
     ],
     "supervisors": [
         {
-            "name": "Dr. Supervisor 1",
-            "email": "email@eng.pdn.ac.lk",
+            "name": "Dr. Upul Jayasinghe",
+            "email": "upuljm@eng.pdn.ac.lk",
             "linkedin_profile":"#",
-            "researchgate_profile":"#",
-            "website": "#"
+            "website": "#",
+            "researchgate_profile":"#"
         },
         {
-            "name": "Supervisor 2",
-            "email": "email@eng.pdn.ac.lk",
-            "linkedin_profile":"#",
-            "researchgate_profile":"#",
-            "website": "#"
+            "name": "Dr. Namal Karunarathna",
+            "email": "namal@eng.pdn.ac.lk",
+            "linkedin_profile":"# ",
+            "website": "#",
+            "researchgate_profile":"#"
         }
     ],
     "tags": ["Web", "ML"]
