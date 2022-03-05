@@ -44,6 +44,9 @@ Application features and description of the web application
 Benefits of this proposed solution
 The user will be able to get a clear idea about the risks associated with COVID-19 vaccination.
 	
+## Use case diagram
+<img src='Diagrams/UML/6sp_uml.drawio.png'> </img>
+	
 
 ## Target Customers
 People who are going to take the COVID-19 vaccines.
