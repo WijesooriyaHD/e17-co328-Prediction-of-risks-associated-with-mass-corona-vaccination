@@ -42,7 +42,7 @@ Application features and description of the web application
 2. Graphical representation of the analyzed data.
 	
 ### Use case diagram
-<img src='Diagrams/UML/6sp_uml.drawio.png'> </img>
+<center> <img src='Diagrams/UML/6sp_uml.drawio.png'> </img> </center>
 
 
 ## Team Members
