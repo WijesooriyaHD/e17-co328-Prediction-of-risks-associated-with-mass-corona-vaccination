@@ -40,13 +40,16 @@ Application features and description of the web application
 - affected with COVID-19 before?
 
 2. Graphical representation of the analyzed data.
-
-Benefits of this proposed solution
-The user will be able to get a clear idea about the risks associated with COVID-19 vaccination.
 	
-## Use case diagram
+### Use case diagram
 <img src='Diagrams/UML/6sp_uml.drawio.png'> </img>
+
+
+## Team Members
+1. E/17/040 Chandrasena M.M.D [[e17040@eng.pdn.ac.lk](mailto:e17040@eng.pdn.ac.lk)]
+2. E/17/356 Upekha H.P.S [[e17356@eng.pdn.ac.lk](mailto:e17356@eng.pdn.ac.lk)]
+3. E/17/407 Wijesooriya H.D [[e17407@eng.pdn.ac.lk](mailto:e17407@eng.pdn.ac.lk)]
+
 	
 
-## Target Customers
-People who are going to take the COVID-19 vaccines.
+
