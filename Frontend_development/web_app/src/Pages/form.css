@@ -1,0 +1,35 @@
+body{
+
+    background-image: url("../Assets/h1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;;
+
+}
+
+
+.content{
+    
+    height:50%;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    margin-top: 4cm;
+    background-color:rgb(252, 205, 105);
+    border-radius: 0.5cm;
+    
+  
+
+}
+
+
+.form-label{
+
+    font-weight: bold;
+    font-size: larger;
+}
+
+.btn btn-dark{
+    font-weight: bold;
+}
+
