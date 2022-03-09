@@ -6,13 +6,13 @@ class Form extends Component {
         super(props)
 
         this.state = {
-            age : ' ',
-            gender:' ',
-            height:' ',
-            weight: ' ',
-            vaccine:' ',
-            blood:' ',
-            livingArea: ' '
+          age : '',
+          gender:'',
+          height:'',
+          weight: '',
+          vaccine:'',
+          blood:'',
+          livingArea: ''
         }
     }
 
@@ -93,6 +93,7 @@ class Form extends Component {
                     <div className="col-md-4">
                     <select className="form-select" value={this.state.gender} 
                     onChange={this.handleGender} >
+                              <option value=''>  </option>
                               <option value='Male'> Male </option>
                               <option value='Female'> Female </option>
 
@@ -136,6 +137,7 @@ class Form extends Component {
                         <div className="col-md-4">
                         <select className="form-select" value={this.state.vaccine} 
                         onChange={this.handleVaccine}>
+                                  <option value=''>  </option>
                                   <option value='Pfizer'> Pfizer </option>
                                   <option value='Moderna'> Moderna </option>
                                   <option value='Sinopharm'> Sinopharm</option>
@@ -153,6 +155,7 @@ class Form extends Component {
                     <div className="col-md-4">
                     <select className="form-select" value={this.state.blood} 
                     onChange={this.handleBlood}>
+                              <option value=''>  </option>
                               <option value='A+'> A+ </option>
                               <option value='A-'> A- </option>
                               <option value='AB+'> AB+ </option>
@@ -176,6 +179,7 @@ class Form extends Component {
                     <div className="col-md-4">
                     <select className="form-select" value={this.state.livingArea} 
                     onChange={this.handleLivingArea}>
+                              <option value=''>  </option>
                               <option value='Downtown'> Downtown </option>
                               <option value='Outskirt'> Outskirt</option>
                               
