@@ -63,12 +63,44 @@ class Form extends Component {
       })
     }
 
-    handleSubmit= event =>{
-        alert(`${this.state.age} ${this.state.gender} ${this.state.height} 
-        ${this.state.weight} ${this.state.vaccine}
-        ${this.state.blood} ${this.state.livingArea}`)
-        event.preventDefault()
-    }
+    handleSubmit= async (event) =>{
+
+      event.preventDefault()
+
+      let formData={
+        age:this.state.age,
+        gender:this.state.gender,
+        height:this.state.height,
+        weight:this.state.weight,
+        vaccine:this.state.vaccine,
+        blood:this.state.blood,
+        livingArea:this.state.livingArea
+
+      };
+
+      const isValid= await userSchema.isValid(formData)
+      console.log(isValid)
+
+      if(isValid===true){
+        alert("Hello ! \n"+
+        "This is what we received :\n"
+        +"Age = "+`${this.state.age}`+"\n"
+        +"Gender = "+`${this.state.gender}` +"\n"
+        +"Height =  "+`${this.state.height}` +"\n"
+        +"Weight =  "+`${this.state.weight}`+"\n"
+        +"Vaccine Type =  "+`${this.state.vaccine}`+"\n"
+        +"Blood Type =  "+`${this.state.blood}` +"\n"
+        +"Living Area =  "+ `${this.state.livingArea}`)
+      }else{
+
+        alert("Invalid Input")
+      
+        
+      }
+
+       
+        
+  }
     
 
     render() { 
