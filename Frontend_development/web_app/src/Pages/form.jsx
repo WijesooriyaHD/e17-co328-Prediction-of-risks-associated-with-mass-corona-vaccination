@@ -229,7 +229,7 @@ class Form extends Component {
 
                 <br></br>
               
-                <button type="submit" className="btn btn-dark">Submit</button>
+                <button type="submit" className="btn btn-info">Submit</button>
                 
               </form>
               </div>
