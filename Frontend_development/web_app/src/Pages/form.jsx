@@ -78,15 +78,19 @@ class Form extends Component {
                 <div className="row g-3">
 
                   <div className="col-md-4">
-                    <label className="form-label">Age</label>
+                    <label className="form-label">Age</label></div>
+                    <div className="col-md-4">
                     <input type="text" className="form-control" value={this.state.age}
                             onChange={this.handleAge}>
                     </input>
 
                   </div>
-
+                  </div>
+                  <br></br>
+                  <div className="row g-3">
                     <div className="col-md-4">
-                    <label  className="form-label">Gender</label>
+                    <label  className="form-label">Gender</label></div>
+                    <div className="col-md-4">
                     <select className="form-select" value={this.state.gender} 
                     onChange={this.handleGender} >
                               <option value='Male'> Male </option>
@@ -96,19 +100,25 @@ class Form extends Component {
                   </div>
 
                 </div>
+                <br></br>
                 
 
                 <div className="row g-3">
 
                   <div className="col-md-4">
-                    <label className="form-label">Height</label>
+                    <label className="form-label">Height</label></div>
+                    <div className="col-md-4">
                     <input type="text" className="form-control" value={this.state.height}
                             onChange={this.handleHeight}>
                     </input>
                   </div>
+                  </div>
+                  <br></br>
 
+                  <div className="row g-3">
                   <div className="col-md-4">
-                    <label className="form-label">Weight</label>
+                    <label className="form-label">Weight</label></div>
+                    <div className="col-md-4">
                     <input type="text" className="form-control" value={this.state.weight}
                             onChange={this.handleWeight}>
                     </input>
@@ -116,11 +126,14 @@ class Form extends Component {
 
                 </div>
 
+                <br></br>
+
                 <div className="row g-3">
 
 
                     <div className="col-md-4">
-                        <label  className="form-label">Vaccine Type</label>
+                        <label  className="form-label">Vaccine Type</label></div>
+                        <div className="col-md-4">
                         <select className="form-select" value={this.state.vaccine} 
                         onChange={this.handleVaccine}>
                                   <option value='Pfizer'> Pfizer </option>
@@ -130,10 +143,14 @@ class Form extends Component {
 
                         </select>
                     </div>
-                      
+                    </div>
+                    <br></br>
+
+                    <div className="row g-3">
 
                     <div className="col-md-4">
-                    <label  className="form-label">Blood Group</label>
+                    <label  className="form-label">Blood Group</label></div>
+                    <div className="col-md-4">
                     <select className="form-select" value={this.state.blood} 
                     onChange={this.handleBlood}>
                               <option value='A+'> A+ </option>
@@ -149,12 +166,14 @@ class Form extends Component {
                   </div>
 
                 </div>
+                <br></br>
 
                 <div className="row g-3">
 
                 <div className="col-md-4">
 
-                    <label  className="form-label">Living Area</label>
+                    <label  className="form-label">Living Area</label></div>
+                    <div className="col-md-4">
                     <select className="form-select" value={this.state.livingArea} 
                     onChange={this.handleLivingArea}>
                               <option value='Downtown'> Downtown </option>
@@ -163,12 +182,12 @@ class Form extends Component {
                     </select>
                   </div>
 
-                  
+                  </div>
                 
 
-                </div>
+                
 
-
+                <br></br>
               
                 <button type="submit" className="btn btn-dark">Submit</button>
                 
