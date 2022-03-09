@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './form.css'
 
-import {userSchema} from '../Validations/formValidation'
+import {userSchema} from '../Validation/formValidation'
 import * as yup from "yup";
 
 class Form extends Component {
