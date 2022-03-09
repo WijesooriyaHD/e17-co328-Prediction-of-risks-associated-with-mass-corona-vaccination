@@ -126,6 +126,7 @@ class Form extends Component {
                                   <option value='Pfizer'> Pfizer </option>
                                   <option value='Moderna'> Moderna </option>
                                   <option value='Sinopharm'> Sinopharm</option>
+                                  <option value='Astrazeneca'> Astrazeneca</option>
 
                         </select>
                     </div>
