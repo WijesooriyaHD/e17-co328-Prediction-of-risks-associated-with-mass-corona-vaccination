@@ -54,7 +54,7 @@ body{
   
 }
 
-input,textarea,Height{
+input,textarea{
     width: 100%;
     padding: 10px;
     outline: 0;
@@ -64,4 +64,17 @@ input,textarea,Height{
     background: transparent;
     font-size: 15px;
 
+}
+
+.col-md-4{
+    color: #fff;
+}
+
+
+.form-control{
+    color: rgb(40, 198, 238);
+}
+
+.placeholder{
+    color: rgb(238, 40, 40);
 }
