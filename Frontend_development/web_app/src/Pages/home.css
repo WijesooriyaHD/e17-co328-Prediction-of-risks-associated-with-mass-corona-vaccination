@@ -1,8 +1,29 @@
 body{
 
-   
+    background-image: linear-gradient(rgba(0,0,0,0.7),#31417c), url(../Assets/vaccination.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;;
-
 }
+
+.style1{
+    font-family: 'Times New Roman';
+    font-size: 80px;
+    padding-left: 1px;
+    padding-top: 250px;
+    color:aliceblue;
+  }
+.style2{
+    font-family: 'Times New Roman';
+    font-size: 80px;
+    padding-left: 00px;
+    padding-top: 0px;
+    color:white;
+}
+.style3{
+    font-family: 'Times New Roman';
+    font-size: 100px;
+    padding-left: 120px;
+    padding-top: 100px;
+    color:black;
+  }

@@ -7,13 +7,15 @@ class Home extends Component {
     
     render() { 
         return (
-            <><div>
-                <h1>welcome page</h1>
+            <>
+            <div className='style1'>
+                <div className='new-line'>
+                <div className='style2'><center>WELCOME TO</center></div>
+                <center>RISK PREDICTOR</center>
+                </div> 
+            
             </div>
-            <div>
-            <Link to="/form"><button>click here
-            </button></Link>
-            </div>
+            
             </>
         );
     }
