@@ -1,6 +1,6 @@
 body{
 
-    background-image: linear-gradient(rgba(0,0,0,0.7),#3551b5), url(../Assets/vaccination.jpeg);
+    background-image:linear-gradient(rgba(69, 128, 88, 0.7),#030a24), url(../Assets/vaccination.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;;
@@ -11,14 +11,14 @@ body{
     font-size: 80px;
     padding-left: 1px;
     padding-top: 250px;
-    color:aliceblue;
+    color:yellow;
   }
 .style2{
     font-family: 'Times New Roman';
     font-size: 80px;
     padding-left: 00px;
     padding-top: 0px;
-    color:white;
+    color:yellow;
 }
 .style3{
     font-family: 'Times New Roman';

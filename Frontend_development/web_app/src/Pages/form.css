@@ -2,9 +2,10 @@ body{
 
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.7),#3551b5), url(../Assets/vaccination.jpeg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),#3551b5), url(1.jpg);
     background-size: cover;
     background-position: center;
+   
     display: flex;
 }
 
