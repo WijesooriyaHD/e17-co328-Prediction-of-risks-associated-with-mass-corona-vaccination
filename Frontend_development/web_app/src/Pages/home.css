@@ -1,6 +1,6 @@
 body{
 
-    background-image: linear-gradient(rgba(0,0,0,0.7),#31417c), url(../Assets/vaccination.jpeg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),#3551b5), url(../Assets/vaccination.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;;
