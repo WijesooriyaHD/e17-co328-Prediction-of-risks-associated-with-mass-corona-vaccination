@@ -10,7 +10,7 @@ class Home extends Component {
             <>
             <div className='style1'>
                 <div className='new-line'>
-                <Typist cursor={{hideWhenDone: true , hideWhenDoneDelay:10}}>
+                <Typist cursor={{hideWhenDone: true , hideWhenDoneDelay:15}}>
                 <div className='style2'><center>WELCOME TO</center></div>
                 <center>RISK PREDICTOR</center>
                 </Typist>
