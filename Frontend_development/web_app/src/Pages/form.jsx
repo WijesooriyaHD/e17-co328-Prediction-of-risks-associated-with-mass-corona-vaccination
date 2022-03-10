@@ -4,6 +4,7 @@ import './form.css'
 import {userSchema} from '../Validation/formValidation'
 import * as yup from "yup";
 
+
 class Form extends Component {
     
     constructor(props){
@@ -229,7 +230,7 @@ class Form extends Component {
 
                 <br></br>
               
-                <button type="submit" className="btn btn-info">Submit</button>
+                <button type="submit" className="btn btn-dark">Submit</button>
                 
               </form>
               </div>
