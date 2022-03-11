@@ -19,11 +19,10 @@
 							<li><a href="#intro">Introduction</a></li>
 							<li><a href="#one">Solution Architecture</a></li>
 							<li><a href="#two">Software Design</a></li>
-							<li><a href="#three">Hardware Design</a></li>
-							<li><a href="#eight">Security AND SAFETY</a></li>
+							
 							<li><a href="#nine">Testing</a></li>
-							<li><a href="#four">Budget</a></li>
-							<li><a href="#five">TimeLine</a></li>
+							
+							<li><a href="#five">Plan of Work</a></li>
 							<li><a href="#six">Team</a></li>
 							<li><a href="#seven">Contact Us</a></li>
 						</ul>
@@ -87,55 +86,77 @@
 					<section id="one" class="wrapper style2 spotlights">
 						<div class="inner">
 							<h2><center><font face ="Optima" size="7">SOLUTION ARCHITECTURE</font></center></h2>
-							
+						
+							<br>
 							<center>
-							<img src="images/bigpic2.PNG" alt=""position="center"  style="width:700px;height:430px;"> 
+							<img src="images/bigPic.drawio.png" alt=""position="center"  style="width:600px;height:350px;"> 
 							</center>
+							
 
 
 							<p><br>
-								There is a cry detection mechanism which detects cry of the baby and send instant mobile app notifications to the user, at the same time some music will be played to soothe the baby.User can use play music option using their mobile application according to their wish at any occation even if a cry is not detected in order to soothe the baby.
-								Using the temperature sensors, room temperature is delected and if it exceed 30 celcius ,mini fan will be turned on automatically.Turn on and off functions of the mini fan can be fully controled using the mobile application also according to the need of the user.Swing of the cradle is fully controlled by the Mobile application.
+
+								To predict the risks associated with mass corona vaccination
+								we are going to analyze different kinds of side effects
+								(Fever,Itching,Coughing,Joint pain,Headache,Muscle pain,Swelling , Redness etc) 
+								with the following parameters,
+								<ul>
+									<li>Age</li> 
+									<li>Gender</li>
+									<li>Height and Weight</li>
+									<li>Vaccine Type</li>
+									<li>Blood Group</li>
+									<li>Living Area</li>
+								</ul>
+								During the above analysis process first, we will try out different machine learning models, 
+								and then we will choose the best model by comparing the accuracy of each model.
+								Our machine learning model will do the predictions on above mentioned side effects and finaly give a probability
+								of being affected with a particular side effect.
+								Finally, a web application that is combined with the best machine learning model will be developed.
+								A database is maintaied at the backend at it will store the predictions
+								along with the details provided by the user.
+								Those data will be then used as another dataset.
+							</p>	
+								<br>
+
+								<h3><font face ="Optima" size="6">Use case diagram </font></h3><br>
+
+								<center>
+								<img src="images/6sp_uml.drawio.png" alt=""position="center"  style="width:750px;height:450px;"> 
+								</center>
+								<br>
+
+								<p>
+									In our system (web application) there are two main actors. 
+									The person who visits our website (CUSTOMER) is the primary actor. 
+									The machine learning model is the secondary user of our system. 
+									There are four main use cases in our system and they are shown below
+									<ol>
+										<li>submit a form : The user has to submit a form and that form will take some details of the user. 
+											Once the user clicks on the submit button the web application will check the validity of the entered data, so it is an 'include' relationship. 
+											If the details are incorrect the web application will display an error message, so that is an 'extend' relationship. Finally the data entered by the user will be fed into a ML model to do predictions.</li>
+
+										<li>
+											view graphs on analyzed data : Once the user clicks on the submit button he or she will be navigated to another page and it will show the graphs on analyzed data
+										</li>
+										<li>
+											do predictions : ML model will predict the percentage of having a particular side effect for a person, according to the prediction algorithm, 
+											past data set and the details entered by the user.
+										</li>
+										<li>
+											view predictions : The user will be able to see the percentage of
+											being affected with a particular side effect.
+										</li>
+									</ol>
 								</p>
-								<br>
-								
-								Central server(AWS ) is used to maintain a database to keep a track of registrations and logins.Whenever the user log in to the system, mobile application will conect to the server and verify authentications.
-								
-								<br>
-								<br>
-
-								<h3><font face ="Optima" size="6">Hardware Control Flow</font></h3><br>
-
-								<center>
-								<img src="images/hardware_flow.png" alt=""position="center"  style="width:1000px;height:1000px;"> 
-								</center>
 
 								<br><br>
 
-								<h3><font face ="Optima" size="6">Software Control Flow</font></h3><br>
+								<h3><font face ="Optima" size="6">ER diagram</font></h3><br>
 
 								<center>
-								<img src="images/Software flow chart.png" alt=""position="center"  style="width:780px;height:900px;"> 
+								<img src="images/6sp_er.drawio.png" alt=""position="center"  style="width:700px;height:500px;"> 
 								</center>
-
-								<br><br>
-
-
-								<h3><font face ="Optima" size="6">ER Diagram</font></h3><br>
-
-								<center>
-								<img src="images/databaseDiagrams/er.PNG" alt=""position="center"  style="width:650px;height:250px;"> 
-								</center>
-
-								<br><br>
-
-								<h3><font face ="Optima" size="6">EER Diagram</font></h3><br>
-								<center>
-								<img src="images/databaseDiagrams/err.PNG" alt=""position="center"  style="width:500px;height:250px;"> 
-								</center>
-								<br><br>
-
-
 						</div>
 						
 					</section>
@@ -548,286 +569,9 @@
 
 				<!-- Three -->
 
-				<section id="three" class="wrapper style2 spotlights">
-					<div class="inner">
-						<h2><center><font face ="Optima" size="7">HARDWARE DESIGN</font></center></h2>
-						
-						<h2><font face ="Optima" size="6">Hardware Components</font></h2>
-						<table style="width:100%">
-							
-							<tr>
-							  
-							  <td align='left' width='700'><img src="images/nodemcu2.jpg" alt="" data-position="top center"  style="width:330px;height:250px;"> 
-								<br>
-									<b>NodeMCU</b>
-									<ul>
-										
-										<li>GPIO pins + WIFI module inbuilt</li>
-										<li>Operating Voltage: 3.3V  </li>
-										<li> Input Voltage: 7-12V</li>
-										<li> Flash Memory: 4 MB</li>
-										<li> SRAM: 64 KB  </li>
-										<li> Clock Speed: 80 MHz</li>
-										
-										
-									  </ul> 
-								
-							  </td>
-
-							  <td align='left' width='700'><img src="images/sound_sensor.jpg" alt="" data-position="top center"  style="width:380px;height:250px;"> 
-								<br>
-									 <b>Sound sensor</b>
-									<li> Operating Voltage: 3.3V to 5V DC</li>
-									<li> LM393 comparator with threshold prest</li>
-									<li> Induction distance: 0.5 Meter</li>
-									<li> Operating current:  4~5 mA</li>
-									<li> Microphone Sensitivity (1kHz): 52 to 48 dB</li>
-									<li> Small, cheap and easily available</li>
-									
-								
-							  </td>
-
-							  <td align='left' width='700'><img src="images/motor_driver.jpg" alt="" data-position="top center"  style="width:300px;height:250px;"> 
-								<br>
-									<b> Motor Driver</b>
-									
-									<li> Power Supply: DC 5 V - 35 V</li>
-									<li> Operating current range: 0 ~ 36mA</li>
-									<li> On-board +5V regulated Output supply</li>
-									
-				
-									
-								
-							  </td>
-							 
-							  
-							  
-							</tr>
-
-							<tr>
-								
-								<td align='left' width='700'><img src="images/temp_sensor.jpg" alt="" data-position="top center"  style="width:330px;height:250px;"> 
-									<br>
-										<b> Thermal sensor</b>
-										<li> Working voltage: DC 3.3-5V</li>
-										<li> can measure : -55°C to 150°C </li>
-										<li> ±0.5°C  Accuracy</li>
-										<li> Drain current is less than 60uA  </li>
-										<li>Low cost temperature sensor</li>
-										<li> Small and hence suitable for remote applications</li>
-										
-					
-										
-									
-								  </td>
-
-								  <td align='left' width='700'><img src="images/servo_motor.jpg" alt="" data-position="top center"  style="width:400px;height:250px;"> 
-									<br>
-										<b> Servo Motor</b>
-
-										<li> Torque: 5.5kg/cm (at 4.8V)</li>
-										<li> Working Voltage: 4.8V-6V</li>
-										<li> Current Usage: <1000mA</li>
-										
-					
-										
-									
-								  </td>
-
-								  <td align='left' width='700'><img src="images/cam.PNG" alt="" data-position="top center"  style="width:300px;height:250px;"> 
-									<br>
-										<b> Camera Shield</b>
-
-										<li> Voltage: 2.5V to 3.0V</li>
-										<li> Lens Size: 1/6" , Vision Angle: 25 degree</li>
-										<li> High sensitivity for low-light operation</li>
-										<li> Color saturation level auto adjust</li>
-								  </td>
-
-
-								
-								
-								
-							</tr>
-
-						</table>
-
-						<table style="width:100%">
-
-							<tr>
-
-								<td align='center' width='700'><img src="images/fan1.jpg" alt="" data-position="top center"  style="width:300px;height:250px;"> 
-									<br>
-										<b> Mini fan</b>
-										
-										<li> DC Mode: 450 ~ 2150 RPM </li>
-										<li> Operating Voltage: DC 5V～13.2V </li>
-									
-								</td>
-
-								
-								<td align='center' width='700'><img src="images/speaker.crdownload" alt="" data-position="top center"  style="width:300px;height:250px;"> 
-									<br>
-										<b>speaker</b>
-									
-								</td>
-
-
-								
-							</tr>
-							
-						</table>
-						<h3><center><font face ="Optima" size="6">Schematic Circuit Diagram</font></center></h3>
-
-						<center>
-							<img src="images/circuit.png" alt="" data-position="top center"  style="width:800px;height:450px;"> 
-						</center>
-						<br>
-
-					<h3><center><font face ="Optima" size="6">PCB Design</font></center></h3>
-
-						<center>
-							<img src="images/pcb.jpg" alt="" data-position="top center"  style="width:800px;height:450px;"> 
-						</center>
-
-						<br>
-						<br>
-
-						<h2><font face ="Optima" size="6"> 3D Model </font> </h2>
-
-						<table style="width:100%">
-
-							<tr>
-
-								<td align='center' width='700'><img src="images/MODEL1.jpg" alt="" data-position="top center"  style="width:350px;height:300px;"> 
-									
-									
-								</td>
-
-								
-								<td align='center' width='700'><img src="images/module2.jpg" alt="" data-position="top center"  style="width:300px;height:300px;"> 
-								
-									
-								</td>
-
-								<td align='center' width='700'><img src="images/module5.jpg" alt="" data-position="top center"  style="width:350px;height:300px;"> 
-								
-									
-								</td>
-
-
-
-								
-							</tr>
-							
-						</table>
-
-
-
-					</div>
-				</section>
-
 
 				<!-- Security -->
-				<section id="eight" class="wrapper style4 ">
-					<div class="inner">
-						
-						<h2><center> <font face ="Optima" size="7">SECURITY AND SAFTY</font></center></h2>
-
-						<table style="width:100%">
-
-							<tr>
-
-								<td align='center' width='700'><img src="images/aws.jpg" alt="" data-position="top center"  style="width:200px;height:200px;"> 
-									
-								</td>
-
-								<td align='center' width='700'><img src="images/RDS.png" alt="" data-position="top center"  style="width:250px;height:200px;"> 
-									
-								</td>
-
-								<td align='center' width='700'><img src="images/jwt.png" alt="" data-position="top center"  style="width:200px;height:200px;"> 
-									
-								</td>
-
-								<td align='center' width='700'><img src="images/hash.jpg" alt="" data-position="top center"  style="width:270px;height:200px;"> 
-									
-								</td>
-
-
-								
-
-							</tr>
-							
-						</table>
-
-						<p> When we consider about a product like cradle ,security and safety is the most important thing.Security features of this product
-							are achieved by using the above technologies.
-						
-
-						<br><br>
-							<b>AWS</b> :  This is the cloud based serever that we use.We have choosen it ,because it provides secure services.
-							It uses certificates to authenticate machine to machine communication and provides policies to control the 
-							actions of the devices.
-
-						<br><br>
-							<b>Amazon RDS</b> :  We create our own database server in cloud, and amzon RDS is the storage service that we use.We have choosen it because
-							it supports MySQL and it is secure.It uses data encryption to secure data.The data stored in the disk is encrypted.
-							The data which is transmited via the network is also encrypted.
-						
-
-						<br><br>
-							<b>JSON Web Token (JWT)</b> : This is used for the authetication.Once the user login to the system the server sends this token to the user.
-
-							<br><br>
-							<b>Passward Hashing</b> : The orginal password is not stored in the database.Hashing performs a one-way
-							transformation on a passward, turning the passward into another string.
-						</p>
-
-						<table style="width:100%">
-
-							<tr>
-
-								<td align='center' width='350'><img src="images/token_POST.PNG" alt="" data-position="top center"  style="width:750px;height:420px;"> 
-									<br>
-					
-									
-									<li> Sending JSON Web Token at the login. </li>
-							
-								
-											
-								</td>
-							</tr>
-						</table>
-
-						<table style="width:100%">
-
-								<td align='center' width='350'><img src="images/hashDB.PNG" alt="" data-position="top center"  style="width:800px;height:200px;"> 
-
-									<li>Store hashed passwords in the MySQL database.</li>
-									
-								
-									
-									
-								</td>
-
-								
-
-							</tr>
-							
-						</table>
-
-						
-
-
-
-						
-
-
-
-					</div>
-				</section>
-
+			
 				<!--Nine-->
 				<section id="nine" class="wrapper style2 spotlights">
 					<div class="inner">
