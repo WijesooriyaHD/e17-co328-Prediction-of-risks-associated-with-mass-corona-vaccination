@@ -201,8 +201,8 @@ class Form extends Component {
                     <div className="col-md-4">
                         <label  className="form-label">Vaccine Type</label></div>
                         <div className="col-md-4">
-                        <select className="form-select" value={this.state.vaccine} 
-                        onChange={this.handleVaccine}>
+                        <select className="form-select" value={this.state.vaccine_type} 
+                        onChange={this.handlevaccine_type}>
                                   <option value=''>  </option>
                                   <option value='Pfizer'> Pfizer </option>
                                   <option value='Moderna'> Moderna </option>
@@ -219,8 +219,8 @@ class Form extends Component {
                     <div className="col-md-4">
                     <label  className="form-label">Blood Group</label></div>
                     <div className="col-md-4">
-                    <select className="form-select" value={this.state.blood} 
-                    onChange={this.handleBlood}>
+                    <select className="form-select" value={this.state.blood_group} 
+                    onChange={this.handleblood_group}>
                               <option value=''>  </option>
                               <option value='A+'> A+ </option>
                               <option value='A-'> A- </option>
@@ -243,7 +243,7 @@ class Form extends Component {
 
                     <label  className="form-label">Living Area</label></div>
                     <div className="col-md-4">
-                    <select className="form-select" value={this.state.livingArea} 
+                    <select className="form-select" value={this.state.living_area} 
                     onChange={this.handleLivingArea}>
                               <option value=''>  </option>
                               <option value='Downtown'> Downtown </option>
