@@ -4,67 +4,70 @@ import './form.css'
 import {userSchema} from '../Validation/formValidation'
 import * as yup from "yup";
 
+import axios from 'axios';
+
 
 class Form extends Component {
+
     
-    constructor(props){
-        super(props)
+  constructor(props){
+    super(props)
 
-        this.state = {
-          age : '',
-          gender:'',
-          height:'',
-          weight: '',
-          vaccine:'',
-          blood:'',
-          livingArea: ''
-        }
+    this.state = {
+        age : '',
+        gender:'',
+        height:'',
+        weight: '',
+        vaccine_type:'',
+        blood_group:'',
+        living_area: ''
     }
+  }
 
-    handleAge = event =>{
-        this.setState({
-            age:event.target.value
-        })
-
-    }
-
-    handleGender= event =>{
-        this.setState({
-            gender:event.target.value
-        })
-    }
-
-    handleHeight= event =>{
+  handleAge = event =>{
       this.setState({
-          height:event.target.value
+          age:event.target.value
       })
-    }
 
-    handleWeight= event =>{
+  }
+
+  handleGender= event =>{
       this.setState({
-          weight:event.target.value
+          gender:event.target.value
       })
-    }
+  }
 
-    handleVaccine= event =>{
-      this.setState({
-          vaccine:event.target.value
-      })
-    }
+  handleHeight= event =>{
+    this.setState({
+        height:event.target.value
+    })
+  }
 
-    handleBlood= event =>{
-      this.setState({
-          blood:event.target.value
-      })
-    }
+  handleWeight= event =>{
+    this.setState({
+        weight:event.target.value
+    })
+  }
 
-    handleLivingArea= event =>{
-      this.setState({
-          livingArea:event.target.value
-      })
-    }
+  handlevaccine_type= event =>{
+    this.setState({
+        vaccine_type:event.target.value
+    })
+  }
 
-    handleSubmit= async (event) =>{
+  handleblood_group= event =>{
+    this.setState({
+        blood_group:event.target.value
+    })
+  }
+
+  handleLivingArea= event =>{
+    this.setState({
+        living_area:event.target.value
+    })
+  }
+
+  handleSubmit= async (event) =>{
 
       event.preventDefault()
 
@@ -73,9 +76,9 @@ class Form extends Component {
         gender:this.state.gender,
         height:this.state.height,
         weight:this.state.weight,
-        vaccine:this.state.vaccine,
-        blood:this.state.blood,
-        livingArea:this.state.livingArea
+        vaccine_type:this.state.vaccine_type,
+        blood_group:this.state.blood_group,
+        living_area:this.state.living_area
 
       };
 
@@ -85,24 +88,50 @@ class Form extends Component {
       if(isValid===true){
         alert("Hello ! \n"+
         "This is what we received :\n"
-        +"Age = "+`${this.state.age}`+"\n"
-        +"Gender = "+`${this.state.gender}` +"\n"
-        +"Height =  "+`${this.state.height}` +"\n"
-        +"Weight =  "+`${this.state.weight}`+"\n"
-        +"Vaccine Type =  "+`${this.state.vaccine}`+"\n"
-        +"Blood Type =  "+`${this.state.blood}` +"\n"
-        +"Living Area =  "+ `${this.state.livingArea}`)
+        +"Age = "+`${formData.age}`+"\n"
+        +"Gender = "+`${formData.gender}` +"\n"
+        +"Height =  "+`${formData.height}` +"\n"
+        +"Weight =  "+`${formData.weight}`+"\n"
+        +"Vaccine  Type  =  "+`${formData.vaccine_type}`+"\n"
+        +"Blood Group  =  "+`${formData.blood_group}` +"\n"
+        +"Living Area =  "+ `${formData.living_area}`)
+
+        axios
+        .post(`http://192.168.174.1:8000/form`,{
+          age:formData['age'],
+          gender:formData['gender'],
+          height:formData['height'],
+          weight:formData['weight'],
+          vaccine_type:formData['vaccine_type'],
+          blood_group:formData['blood_group'],
+          living_area:formData['living_area']
+
+
+        } )
+        .then( res=> {
+          console.log(res);
+          if(res.status===200){
+            alert(`Entered data has been sent successfully`)
+          }
+          console.log(res.data)
+
+        }
+
+        )
+
       }else{
 
         alert("Invalid Input")
       
         
       }
+  
+  };
 
-       
-        
-  }
-    
+
+
+
+   
 
     render() { 
         return (
