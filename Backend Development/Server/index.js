@@ -1,7 +1,9 @@
 const express = require('express');
+const cors=require('cors')
 
 //initialize the app
 const app = express();
+app.use(cors())
 
 //settings
 app.set('port',process.env.PORT || 8000);
@@ -10,8 +12,6 @@ app.set('port',process.env.PORT || 8000);
 app.use(express.json());
 
 //routes
-
-//const signuproute = require('./src/routes/signup')
 const formroute = require('./src/routes/form')
 
 
