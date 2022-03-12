@@ -5,8 +5,8 @@ export const userSchema =yup.object().shape({
     gender: yup.string().required(),
     height: yup.number("Invalid input").positive("Invalid input").required(),
     weight: yup.number("Invalid input").positive("Invalid input").required(),
-    vaccine:yup.string().required(),
-    blood:yup.string().required(),
-    livingArea: yup.string().required(),
+    vaccine_type:yup.string().required(),
+    blood_group:yup.string().required(),
+    living_area: yup.string().required(),
 
 })
