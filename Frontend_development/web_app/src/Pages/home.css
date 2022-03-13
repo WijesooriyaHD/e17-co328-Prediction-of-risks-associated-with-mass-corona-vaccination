@@ -6,24 +6,41 @@ body{
     background-attachment: fixed;;
 }
 
-.style1{
-    font-family: 'Times New Roman';
-    font-size: 80px;
-    padding-left: 1px;
-    padding-top: 250px;
-    color:yellow;
-  }
-.style2{
-    font-family: 'Times New Roman';
-    font-size: 80px;
-    padding-left: 00px;
-    padding-top: 0px;
-    color:yellow;
+
+.topic{
+    text-align: center;
+    color:white;
+    margin: auto;
+    padding-top: 3.5cm;
+    font-size:70px;
+
 }
-.style3{
-    font-family: 'Times New Roman';
-    font-size: 100px;
-    padding-left: 120px;
-    padding-top: 100px;
-    color:black;
-  }
+
+.button1{
+    padding-top: 3cm;
+}
+.button2{
+    margin-top: 1cm;
+}
+
+.btn-c{
+
+    background-color:aquamarine;
+    font-size:larger;
+    font-weight: bold;
+    border-radius: 0.3cm;
+    border-style: double;
+    border-width: thick;
+   
+}
+
+.btn-a{
+
+    background-color:bisque;
+    font-size:larger;
+    font-weight: bold;
+    border-radius: 0.3cm;
+    border-style: double;
+    border-width: thick;
+
+}
