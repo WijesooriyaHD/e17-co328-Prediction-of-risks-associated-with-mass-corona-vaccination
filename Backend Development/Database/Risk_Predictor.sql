@@ -31,3 +31,5 @@ Fever float,
 PRIMARY KEY (user_id)
 
 );
+
+select * from user 
