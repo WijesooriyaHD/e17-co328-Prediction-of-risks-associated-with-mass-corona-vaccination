@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom'
 import './form.css'
 import {userSchema} from '../Validations/formValidation'
 import * as yup from "yup";
@@ -156,6 +157,10 @@ class Form extends Component {
     render() { 
         return (
             <>
+            <div className='button3'>
+                <Link to="/home"><button type="button" className="btn-d"> Home
+                </button></Link>
+            </div>
 
 
           

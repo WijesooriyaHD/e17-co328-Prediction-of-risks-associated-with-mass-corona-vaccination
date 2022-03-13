@@ -40,6 +40,10 @@ class Home extends Component {
     render() { 
         return (
             <><div className='homePage'>
+                 <div className='button3'>
+                    <Link to="/contact"><button type="button" className="btn-d"> Contact Us
+                    </button></Link>
+                </div>
                 <Typist cursor={{hideWhenDone: true , hideWhenDoneDelay:10 }}>
   
                 <h1 className='topic'> Welcome to Risk Predictor</h1>
@@ -61,6 +65,7 @@ class Home extends Component {
             <Link to="/about"><button type="button" className="btn-a"> About this application
             </button></Link>
             </div>
+            
             </>
         );
     }

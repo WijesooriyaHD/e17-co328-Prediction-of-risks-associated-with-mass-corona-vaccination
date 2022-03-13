@@ -22,6 +22,10 @@ body{
 .button2{
     margin-top: 1cm;
 }
+.button3{
+    padding-top: 0.5cm;
+    padding-left:35cm;
+}
 
 .btn-c{
 
@@ -43,4 +47,15 @@ body{
     border-style: double;
     border-width: thick;
 
+}
+
+.btn-d{
+
+    background-color:aquamarine;
+    font-size:larger;
+    font-weight: bold;
+    border-radius: 1cm;
+    border-style: double;
+    border-width: thick;
+   
 }

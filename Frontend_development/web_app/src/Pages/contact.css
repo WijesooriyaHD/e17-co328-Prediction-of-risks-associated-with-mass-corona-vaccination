@@ -1,0 +1,114 @@
+.button3{
+    padding-top: 0.5cm;
+    padding-left:35cm;
+}
+
+.btn-d{
+
+    background-color:aquamarine;
+    font-size:larger;
+    font-weight: bold;
+    border-radius: 1cm;
+    border-style: double;
+    border-width: thick;
+    width: 5cm;
+}
+
+.include{
+    
+    height: 720px;
+    width: 1000px;
+    
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+    
+  
+
+}
+
+
+.form-label{
+
+    
+    font-size:medium;
+    color: #fff;
+}
+
+.form-label1{
+
+    font-weight: bold;
+    font-size:large;
+    color:black;
+}
+
+.form-labelM{
+
+    font-weight: bold;
+    font-size:1.5cm;
+    color: #fff;
+}
+
+.btn btn-info{
+    font-weight:bold;
+    display: inline-block;
+    padding: 2px 2px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline:blue;
+    color:black;
+    font-weight: bold;
+    background-color:transparent;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 9px #999;
+  
+}
+
+input,textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    border-radius: 12%;
+    color: azure;
+    background: transparent;
+    font-size: 15px;
+
+}
+
+.col-md-4{
+    color:white
+}
+
+
+.form-control{
+    color: rgb(40, 198, 238);
+}
+
+.placeholder{
+    color: rgb(238, 40, 40);
+}
+
+.td1{
+    text-align:left;
+}
+
+.td2{
+    margin-left: 60cm;
+}
+
+.table1{
+    margin-left: 7cm;
+    margin-top: 3cm;
+    
+}
