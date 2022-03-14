@@ -42,12 +42,12 @@ class Contact extends Component {
 					        <div class="img-box">
 					        <img src={madush} class="img-responsive" width='278cm'></img>
                                 <ul>
-                                    <a href="e17040@eng.pdn.ac.lk"><li><i class="fa fa-envelope"></i></li></a>
+                                    <a href="mailto:e17040@eng.pdn.ac.lk"><li><i class="fa fa-envelope"></i></li></a>
                                     <a href="https://github.com/madUSH1198"><li><i class="fa fa-github"></i></li></a>
                                     <a href="https://www.linkedin.com/in/madush-dilshan-4a37b2218"><li><i class="fa fa-linkedin"></i></li></a>
 						        </ul>
 					        </div>
-                        <h2>Madush dilshan</h2>
+                        <h2>Madush Dilshan</h2>
                         <h3>E/17/040</h3>
 				    <h3>Department of Computer Engineering</h3>
                     <h3>University of Peradeniya</h3>
@@ -58,7 +58,7 @@ class Contact extends Component {
 					        <div class="img-box">
 					        <img src={hasara} class="img-responsive" width='278cm'></img>
                                 <ul>
-                                    <a href="e17407@eng.pdn.ac.lk"><li><i class="fa fa-envelope"></i></li></a>
+                                    <a href="mailto:e17407@eng.pdn.ac.lk"><li><i class="fa fa-envelope"></i></li></a>
                                     <a href="https://github.com/WijesooriyaHD"><li><i class="fa fa-github"></i></li></a>
                                     <a href="https://www.linkedin.com/in/hasara-wijesooriya-129880218"><li><i class="fa fa-linkedin"></i></li></a>
 						        </ul>
@@ -73,7 +73,7 @@ class Contact extends Component {
 					        <div class="img-box">
 					        <img src={sashini} class="img-responsive" width='279cm'></img>
                                 <ul>
-                                    <a href="e17356@eng.pdn.ac.lk"><li><i class="fa fa-envelope"></i></li></a>
+                                    <a href="mailto:e17356@eng.pdn.ac.lk"><li><i class="fa fa-envelope"></i></li></a>
                                     <a href="https://github.com/ShashiniUpekha/"><li><i class="fa fa-github"></i></li></a>
                                     <a href="https://www.linkedin.com/in/shashini-upekha-46209a219/"><li><i class="fa fa-linkedin"></i></li></a>
 						        </ul>
