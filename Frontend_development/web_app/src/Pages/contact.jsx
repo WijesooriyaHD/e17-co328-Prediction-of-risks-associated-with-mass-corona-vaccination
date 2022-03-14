@@ -16,82 +16,80 @@ import hasara from '../Assets/Hasara.jpg'
 import sashini from '../Assets/shashini.jpg'
 import axios from 'axios';
 
-const float = keyframes`
-0% { transform: translateY(-10px) }
-50% { transform: translateY(15px) translateX(15px) }
-100% { transform: translateY(-10px) }`
-
-const Doc3 = styled.div`
-position: absolute;
-top: 20%;
-left: 5%;
-width: 20vw;
-animation: ${float} 2s ease infinite;
-img{
-    width:auto;
-    height: auto;
-}
-`
-
 class Contact extends Component {
     render() { 
         return (
             <>
+            <head>
+                <title>Our Team section design </title>
+                <link href="contact.css" rel="stylesheet"></link>
+                <link rel="stylesheet" href ="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"></link>
+                <link rel = "stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+            </head>
+            <body>
+            
             <div className='button3'>
-                <Link to="/home"><button type="button" className="btn-d"> Home
-                </button></Link>
+                    <Link to="/home"><button type="button" className="btn-d"> Home
+                    </button></Link>
             </div>
-            
-            
-                      
-            
-<div className="include">
-                    <form className="Form">
 
-                      <div className="row g-3">
-                      <label className="form-labelM">Contact Us</label>
+            <div className="include">
+                <section class="team">
+		            <div class="container">
+			            <h1 className='clr'>OUR TEAM</h1><br></br>
+			            <div class="row">
+                        <div class="col-md-4 profile text-center">
+					        <div class="img-box">
+					        <img src={madush} class="img-responsive" width='278cm'></img>
+                                <ul>
+                                    <a href="http://facebook/madushdilshan"><li><i class="fa fa-facebook"></i></li></a>
+                                    <a href="https://github.com/madUSH1198"><li><i class="fa fa-github"></i></li></a>
+                                    <a href="https://www.linkedin.com/in/madush-dilshan-4a37b2218"><li><i class="fa fa-linkedin"></i></li></a>
+						        </ul>
+					        </div>
+                        <h2>Madush dilshan</h2>
+                        <h3>E/17/040</h3>
+				    <h3>Department of Computer Engineering</h3>
+                    <h3>University of Peradeniya</h3>
 
-                        <table>
-                            
-                            <tr className='form-label1'>
-                                <td>
-                                   PERSON
-                                </td>
-                                <td>PHONE</td>
-                                <td>E-MAIL</td>
-                                <td>LINKED IN</td>
-                            </tr>
-                            <br></br>
-                            
-                            <tr className='form-label'>
-                                <td><br></br><img src={hasara} width='140cm'></img></td>
-                                <td>+94773498567</td>
-                                <td>hasarae17407@gmail.com</td>
-                                <td><a href="https://www.linkedin.com/in/hasara-wijesooriya-129880218"><img src={In} width='35cm'></img></a></td>
-                            </tr>
-                            <tr className='form-label'>
-                                
-                                <td><br></br><img src={sashini} width='140cm'></img></td>
-                                <td>+94711234567</td>
-                                <td>sashinie17356@gmail.com</td>
-                                <td><a href="https://www.linkedin.com/in/shashini-upekha-46209a219/"><img src={In} width='35cm'></img></a></td>
-                            </tr>
-                            
-                            <tr className='form-label'>
-                                
-                                <td><img src={madush} width='140cm'></img></td>
-                                <td>+94775523577</td>
-                                <td>madushchandrasenac98@gmail.com</td>
-                                <td><a href="https://www.linkedin.com/in/madush-dilshan-4a37b2218"><img src={In} width='35cm'></img></a></td>
-                            </tr>
-                            
-                        </table>
-                          
-                      </div>
-                      <br></br>
-                    </form>
-                    </div>
-        </>
+			    </div>
+
+                <div class="col-md-4 profile text-center">
+					        <div class="img-box">
+					        <img src={hasara} class="img-responsive" width='278cm'></img>
+                                <ul>
+                                    <a href="http://facebook/hasarawijesooriya"><li><i class="fa fa-facebook"></i></li></a>
+                                    <a href="https://github.com/WijesooriyaHD"><li><i class="fa fa-github"></i></li></a>
+                                    <a href="https://www.linkedin.com/in/hasara-wijesooriya-129880218"><li><i class="fa fa-linkedin"></i></li></a>
+						        </ul>
+					        </div>
+                        <h2>Hasara Wijesooriya</h2>
+                        <h3>E/17/407</h3>
+				    <h3>Department of Computer Engineering</h3>
+                    <h3>University of Peradeniya</h3>
+			    </div>
+
+                <div class="col-md-4 profile text-center">
+					        <div class="img-box">
+					        <img src={sashini} class="img-responsive" width='279cm'></img>
+                                <ul>
+                                    <a href="http://facebook/sashiniUpekha"><li><i class="fa fa-facebook"></i></li></a>
+                                    <a href="https://github.com/ShashiniUpekha/"><li><i class="fa fa-github"></i></li></a>
+                                    <a href="https://www.linkedin.com/in/shashini-upekha-46209a219/"><li><i class="fa fa-linkedin"></i></li></a>
+						        </ul>
+					        </div>
+                            <h2>Shashini Upekha</h2>
+                            <h3>E/17/356</h3>
+				    <h3>Department of Computer Engineering</h3>
+                    <h3>University of Peradeniya</h3>
+			    </div>
+
+                </div>
+		</div>
+	</section>
+            </div>
+            </body>
+            </>
         );
     }
 }
