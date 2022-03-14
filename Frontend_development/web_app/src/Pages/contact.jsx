@@ -36,13 +36,13 @@ class Contact extends Component {
             <div className="include">
                 <section class="team">
 		            <div class="container">
-			            <h1 className='clr'>OUR TEAM</h1><br></br>
+			            <h1 className='clr'>CONTACT OUR TEAM</h1><br></br>
 			            <div class="row">
                         <div class="col-md-4 profile text-center">
 					        <div class="img-box">
 					        <img src={madush} class="img-responsive" width='278cm'></img>
                                 <ul>
-                                    <a href="http://facebook/madushdilshan"><li><i class="fa fa-facebook"></i></li></a>
+                                    <a href="e17040@eng.pdn.ac.lk"><li><i class="fa fa-envelope"></i></li></a>
                                     <a href="https://github.com/madUSH1198"><li><i class="fa fa-github"></i></li></a>
                                     <a href="https://www.linkedin.com/in/madush-dilshan-4a37b2218"><li><i class="fa fa-linkedin"></i></li></a>
 						        </ul>
@@ -58,7 +58,7 @@ class Contact extends Component {
 					        <div class="img-box">
 					        <img src={hasara} class="img-responsive" width='278cm'></img>
                                 <ul>
-                                    <a href="http://facebook/hasarawijesooriya"><li><i class="fa fa-facebook"></i></li></a>
+                                    <a href="e17407@eng.pdn.ac.lk"><li><i class="fa fa-envelope"></i></li></a>
                                     <a href="https://github.com/WijesooriyaHD"><li><i class="fa fa-github"></i></li></a>
                                     <a href="https://www.linkedin.com/in/hasara-wijesooriya-129880218"><li><i class="fa fa-linkedin"></i></li></a>
 						        </ul>
@@ -73,7 +73,7 @@ class Contact extends Component {
 					        <div class="img-box">
 					        <img src={sashini} class="img-responsive" width='279cm'></img>
                                 <ul>
-                                    <a href="http://facebook/sashiniUpekha"><li><i class="fa fa-facebook"></i></li></a>
+                                    <a href="e17356@eng.pdn.ac.lk"><li><i class="fa fa-envelope"></i></li></a>
                                     <a href="https://github.com/ShashiniUpekha/"><li><i class="fa fa-github"></i></li></a>
                                     <a href="https://www.linkedin.com/in/shashini-upekha-46209a219/"><li><i class="fa fa-linkedin"></i></li></a>
 						        </ul>
