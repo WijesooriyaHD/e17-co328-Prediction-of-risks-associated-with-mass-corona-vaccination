@@ -69,7 +69,10 @@ class Home extends Component {
             <Link to="/about"><button type="button" className="btn-a"><font face ="Comic sans MS" > About Our Website</font>
             </button></Link>
             </div>
-            
+            <div className='button4'>
+            <Link to=" "><button type="button" className="btn-o"><font face ="Comic sans MS" >View Overall Analysis</font>
+            </button></Link>
+            </div>
             </>
         );
     }

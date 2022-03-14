@@ -11,13 +11,13 @@ body{
     text-align: center;
     color:white;
     margin: auto;
-    padding-top: 3.5cm;
+    padding-top: 2.5cm;
     font-size:70px;
 
 }
 
 .button1{
-    padding-top: 3cm;
+    padding-top: 2cm;
 }
 .button2{
     margin-top: 1cm;
@@ -25,6 +25,9 @@ body{
 .button3{
     padding-top: 0.5cm;
     padding-left:35cm;
+}
+.button4{
+    margin-top: 1cm;
 }
 
 .btn-c{
@@ -48,6 +51,18 @@ body{
     border-width: thick;
 
 }
+
+.btn-o{
+
+    background-color:greenyellow;
+    font-size:larger;
+    font-weight: bold;
+    border-radius: 0.3cm;
+    border-style: double;
+    border-width: thick;
+
+}
+
 
 .btn-d{
 
