@@ -46,7 +46,11 @@ class Home extends Component {
                 </div>
                 <Typist cursor={{hideWhenDone: true , hideWhenDoneDelay:10 }}>
   
-                <h1 className='topic'> Welcome to Risk Predictor</h1>
+                <h1 className='topic'>
+
+                <font face ="Algerian" >
+                Welcome to  <br></br>Risk Predictor</font></h1>
+
 
                 </Typist>
                 <Doc>
@@ -58,11 +62,11 @@ class Home extends Component {
             </div>
 
             <div className='button1'>
-            <Link to="/form"><button type="button" className="btn-c">Click here to continue
+            <Link to="/form"><button type="button" className="btn-c"><font face ="Comic sans MS" >Click Here to Continue</font>
             </button></Link>
             </div>
             <div className='button2'>
-            <Link to="/about"><button type="button" className="btn-a"> About this application
+            <Link to="/about"><button type="button" className="btn-a"><font face ="Comic sans MS" > About Our Website</font>
             </button></Link>
             </div>
             
