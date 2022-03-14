@@ -15,7 +15,7 @@ class About extends Component {
         return (
             <>
                 <div class="banner1">
-                <img src={img1} />
+                <img src={img1} class="img1" />
         <div class="text-box text-box1">
             <h1><font face ="Colonna MT" size="7">Why this Web Site ?</font> </h1>
             <span></span>
@@ -33,7 +33,7 @@ class About extends Component {
 
     <div class="banner2">
         
-        <img src={img7} />
+        <img src={img7} class="img7"/>
         <div class="text-box text-box2">
             <h1><font face ="Colonna MT" size="7">Our Objective</font></h1>
             <span></span>
@@ -49,7 +49,7 @@ class About extends Component {
 
     <div class="banner3">
         
-        <img src={img8} />
+        <img src={img8} class="img8"/>
         <div class="text-box text-box3">
             <h1><font face ="Colonna MT" size="10">Our Target Customers</font></h1>
             <span></span>
@@ -61,7 +61,7 @@ class About extends Component {
 
     <div class="banner4">
         
-        <img src={img10} />
+        <img src={img10} class="img10"/>
         <div class="text-box text-box4">
             <h1><font face ="Colonna MT" size="7">Our Solution</font></h1>
             <span></span>
