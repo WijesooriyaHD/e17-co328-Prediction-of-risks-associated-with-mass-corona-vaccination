@@ -33,3 +33,4 @@ PRIMARY KEY (user_id)
 );
 
 select * from user ;
+
