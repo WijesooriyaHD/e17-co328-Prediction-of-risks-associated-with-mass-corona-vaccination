@@ -40,6 +40,8 @@ Application features and description of the web application
 - affected with COVID-19 before?
 
 2. Graphical representation of the analyzed data.
+	![image](https://user-images.githubusercontent.com/86120874/158509012-761b08f7-da5e-4e20-9e14-671943426ae0.png)
+
 	
 ### Use case diagram
 <center> <img src='Diagrams/UML/6sp_uml.drawio.png'> </img> </center>
