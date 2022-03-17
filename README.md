@@ -9,37 +9,34 @@ ___
 <p align="justify">Society is doubtful of getting COVID-19 vaccines due to spreading opinions,  various myths, and fear of getting side effects.
 the above-mentioned problem. (what are their fears about getting the vaccine, 
 Problem diagnosis: a small survey can be conducted, to get a clear idea about etc..)
-
-## Solution
-
-To predict the risks associated with mass corona vaccination we are going to analyze the no of deaths, hospitalizations, and side effects(blood clotting, kidney disease, lung disease, heart disease, Parkinson's disease, etc) after the first dose, second dose or after booster dose with the following parameters.
-- age group
-- gender
-- blood group
-- self-reported comorbidities (eg:  diabetes, kidney disease, lung disease, heart disease…..)
-- height and weight (BMI)
-- vaccine type
-- district 
-- affected with COVID-19 before?
-
-<p align="justify">During the above analysis process first, we will try out different machine learning models, and then we will choose the best model by 
-comparing the accuracy of each model.
-
-Finally, a web application that is combined with the best machine learning model will be developed. 
 	
+## Solution
+To predict the risks associated with mass corona vaccination we are going to analyze different kinds of side effects (Fever,Itching,Coughing,Joint pain,Headache,Muscle pain,Swelling , Redness etc) with the following parameters,
+
+- Age
+- Gender
+- Height and Weight
+- Vaccine Type
+- Blood Group
+- Living Area
+<br>
+During the above analysis process first, we will try out different machine learning models, and then we will choose the best model by comparing the accuracy of each model. Our machine learning model will do the predictions on above mentioned side effects and finaly give a probability of being affected with a particular side effect. Finally, a web application that is combined with the best machine learning model will be developed. A database is maintaied at the backend at it will store the predictions along with the details provided by the user. Those data will be then used as another dataset.
+
 Application features and description of the web application
+
 1. Taking an information form from a person who is willing to take a vaccine and predict the risks (side effects) that can occur according to the developed model. 
 	That form contains the following information.
 - age group
 - gender
 - blood group
-- self-reported comorbidities (eg:  diabetes, kidney disease, lung disease, heart disease…..)
 - height and weight (BMI)
 - vaccine type
-- district 
-- affected with COVID-19 before?
+- living area
 
 2. Graphical representation of the analyzed data.
+
+
+
 	![image](https://user-images.githubusercontent.com/86120874/158509012-761b08f7-da5e-4e20-9e14-671943426ae0.png)
 
 	
