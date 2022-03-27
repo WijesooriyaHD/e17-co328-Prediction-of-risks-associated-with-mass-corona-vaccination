@@ -32,6 +32,7 @@ class Form extends Component {
         super(props)
 
         this.state = {
+            NIC:'',
             age : '',
             gender:'',
             height:'',
@@ -41,6 +42,13 @@ class Form extends Component {
             living_area: ''
         }
     }
+
+    handleNIC = event =>{
+      this.setState({
+          NIC:event.target.value
+      })
+
+  }
 
     handleAge = event =>{
         this.setState({
@@ -90,6 +98,7 @@ class Form extends Component {
         event.preventDefault()
 
         let formData={
+          NIC:this.state.NIC,
           age:this.state.age,
           gender:this.state.gender,
           height:this.state.height,
@@ -106,6 +115,7 @@ class Form extends Component {
         if(isValid===true){
           alert("Hello ! \n"+
           "This is what we received :\n"
+          +"NIC = "+`${formData.NIC}`+"\n"
           +"Age = "+`${formData.age}`+"\n"
           +"Gender = "+`${formData.gender}` +"\n"
           +"Height =  "+`${formData.height}` +"\n"
@@ -116,6 +126,7 @@ class Form extends Component {
 
           axios
           .post(`http://192.168.174.1:8000/form`,{
+            NIC:formData['NIC'],
             age:formData['age'],
             gender:formData['gender'],
             height:formData['height'],
@@ -176,6 +187,20 @@ class Form extends Component {
             
                     
                     <form className="Form" onSubmit={this.handleSubmit}>
+
+                    <div className="row g-3">
+      
+                            <div className="col-md-4">
+                              <label className="form-label">NIC</label></div>
+                              <div className="col-md-4">
+                              <input type="text" className="form-control" value={this.state.NIC}
+                                      onChange={this.handleNIC}>
+                              </input>
+
+                            </div>
+                      </div>
+
+                      <br></br>
 
                       <div className="row g-3">
       
