@@ -8,13 +8,14 @@ var mysqlConnection = require('../connection/connection')
 Router.post('/', function(req, res) {
   
 
-    const {age,gender,height,weight,vaccine_type,blood_group,living_area}=req.body;
+    const {NIC,age,gender,height,weight,vaccine_type,blood_group,living_area}=req.body;
     console.log(req.body);
 
     //server side validation
 
     const schema = Joi.object({
 
+        NIC:Joi.string().required(),
         age: Joi.number().integer().positive().required(),
         gender:Joi.string().required(),
         height:Joi.number().positive().required(),
@@ -33,8 +34,8 @@ Router.post('/', function(req, res) {
     }
 
 
-    mysqlConnection.query('insert into USER (age,gender,height,weight,vaccine_type,blood_group,living_area) values(?,?,?,?,?,?,?);',
-    [age,gender,height,weight,vaccine_type,blood_group,living_area],(error,rows,fileds)=>{
+    mysqlConnection.query('insert into UserFormData (NIC,age,gender,height,weight,vaccine_type,blood_group,living_area) values(?,?,?,?,?,?,?,?);',
+    [NIC,age,gender,height,weight,vaccine_type,blood_group,living_area],(error,rows,fileds)=>{
         if(!error){
             res.json({Status:'Successful'});
         }else{
