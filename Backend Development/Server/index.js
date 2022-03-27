@@ -12,10 +12,14 @@ app.set('port',process.env.PORT || 8000);
 app.use(express.json());
 
 //routes
+
+//const signuproute = require('./src/routes/signup')
 const formroute = require('./src/routes/form')
+const feedbackroute = require('./src/routes/feedback')
 
 
 app.use('/form',formroute);
+app.use('/feedback',feedbackroute);
 
 
 
