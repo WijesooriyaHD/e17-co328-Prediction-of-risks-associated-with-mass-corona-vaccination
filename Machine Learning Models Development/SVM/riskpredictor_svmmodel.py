@@ -144,6 +144,10 @@ def get_model_accuracy(Y):
   # train the svm model with train data
   model.fit(X_train,Y_train)
   
+  #Accuracy of the trainning dataset
+  Y_train_prediction=model.predict(X_train)
+  training_data_accuracy=accuracy_score(Y_train_prediction,Y_train)
+  print('Accuracy on trainning data: ',training_data_accuracy)
 
   #Accuracy on Test data
   Y_test_prediction=model.predict(X_test)
@@ -161,7 +165,7 @@ def accuracy_confusion_matrix(Y):
   model=svm.SVC(kernel='linear')
   # train the svm model with train data
   model.fit(X_train,Y_train)
-  
+    
 
   #Accuracy on Test data
   Y_test_prediction=model.predict(X_test)
