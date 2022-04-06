@@ -36,7 +36,7 @@ from sklearn.metrics import accuracy_score,confusion_matrix
 
 # load dataset from the google drive
 url='https://drive.google.com/file/d/1yFKIb7GCgKPWR-g7q8DZTLzXOCVxd99n/view?usp=sharing'
-url=url='https://drive.google.com/uc?id=' + url.split('/')[-2]
+url='https://drive.google.com/uc?id=' + url.split('/')[-2]
 dataset_df=pd.read_csv(url)
 
 # get the shape of the dataset
@@ -193,7 +193,23 @@ print('Swelling = ',result)
 # model accuracy on swelling
 get_model_accuracy(Y1)
 
-"""## Predictions on all the side effects"""
+"""## Predictions on all the side effects
+
+## Accuracies on all side effects
+"""
+
+# accuracies on all side effects (using accuracy scores)
+index=0
+for count in range(7,23):
+  if(sideEffects[index]!='Itching'):  # to avoid column 'Itching'
+    Y=dataset_df.iloc[:,count]
+    print('Accuracy on '+sideEffects[index])
+    get_model_accuracy(Y)
+    print('\n')
+
+  index=index+1
+
+"""## An example"""
 
 # predictions on all side effects
 
@@ -219,25 +235,8 @@ for count in range(7,23):
 
 print('Possible Sideeffects =',possible_side_effects)
 
-# accurcy on all side effects (using accuracy scores)
-index=0
-for count in range(7,23):
-  if(sideEffects[index]!='Itching'):  # to avoid column 'Itching'
-    Y=dataset_df.iloc[:,count]
-    print('Accuracy on '+sideEffects[index])
-    get_model_accuracy(Y)
-    print('\n')
+risk=(len(possible_side_effects)/15)*100
+safe=100-risk
 
-  index=index+1
-
-# accurcy on all side effects (using confusion matrix scores)
-
-index=0
-for count in range(7,23):
-  if(sideEffects[index]!='Itching'):  # to avoid column 'Itching'
-    Y=dataset_df.iloc[:,count]
-    print('Accuracy on '+sideEffects[index])
-    accuracy_confusion_matrix(Y)
-    print('\n')
-
-  index=index+1
+print('Risk =',risk)
+print('Safe = ',safe)
