@@ -216,27 +216,40 @@ for count in range(7,23):
 # example on user inputs
 input=[[1,51,1,1.71,82,2,0]]
 
-# an array to store possible side effects
 possible_side_effects=[]
 
-index=0
-for count in range(7,23):
-  if(sideEffects[index]!='Itching'):  # to avoid column 'Itching'
-    Y=dataset_df.iloc[:,count]
-    output=get_predictions(Y,X,input)
-    if(output==0):
-      result='No'
-    else:
-      result='Yes'
-      possible_side_effects.append(sideEffects[index])
 
-    #print(sideEffects[index]+' = ',result)
-  index=index+1
+def predictions(input):
 
-print('Possible Sideeffects =',possible_side_effects)
+  # an array to store possible side effects
+  possible_side_effects=[]
 
-risk=(len(possible_side_effects)/15)*100
-safe=100-risk
+  index=0
+  for count in range(7,23):
+    if(sideEffects[index]!='Itching'):  # to avoid column 'Itching'
+      Y=dataset_df.iloc[:,count]
+      output=get_predictions(Y,X,input)
+      if(output==0):
+        result='No'
+      else:
+        result='Yes'
+        possible_side_effects.append(sideEffects[index])
 
-print('Risk =',risk)
-print('Safe = ',safe)
+      #print(sideEffects[index]+' = ',result)
+    index=index+1
+
+  print('Possible Sideeffects =',possible_side_effects)
+
+  risk=(len(possible_side_effects)/15)*100
+  safe=100-risk
+
+  print('Risk =',risk)
+  print('Safe = ',safe)
+  return possible_side_effects
+
+
+
+
+
+pp=predictions(input)
+print(pp)
