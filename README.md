@@ -3,6 +3,15 @@ ___
 ___
 
 
+## Related Links
+
+
+1. [Project page](https://cepdnaclk.github.io/e17-co328-Prediction-of-risks-associated-with-mass-corona-vaccination/ )
+2. [Github repo](https://github.com/cepdnaclk/e17-co328-Prediction-of-risks-associated-with-mass-corona-vaccination)
+3. [Department of computer engineering](http://www.ce.pdn.ac.lk/)
+
+
+
 ## Introduction
 <p align="justify">There is a trend among people not to get COVID-19 vaccinations. Because of the differing viewpoints of the various parties involved, society is skeptical of obtaining it. However, there is no research being done into the vaccination's side effects or the causes of illnesses and deaths. This project will look into the specific criteria or risks that come with vaccinations. So, this will help people to get an idea to check whether to take the vaccines or not. 
 
@@ -51,12 +60,6 @@ Application features and description of the web application
 3. E/17/407 Wijesooriya H.D [[e17407@eng.pdn.ac.lk](mailto:e17407@eng.pdn.ac.lk)]
 
 
-## Related Links
-
-
-1. [Project page](https://cepdnaclk.github.io/e17-co328-Prediction-of-risks-associated-with-mass-corona-vaccination/ )
-2. [Github repo](https://github.com/cepdnaclk/e17-co328-Prediction-of-risks-associated-with-mass-corona-vaccination)
-3. [Department of computer engineering](http://www.ce.pdn.ac.lk/)
 
 
 
