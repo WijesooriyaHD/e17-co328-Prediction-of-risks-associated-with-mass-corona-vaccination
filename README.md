@@ -8,7 +8,8 @@ ___
 
 1. [Project page](https://cepdnaclk.github.io/e17-co328-Prediction-of-risks-associated-with-mass-corona-vaccination/ )
 2. [Github repo](https://github.com/cepdnaclk/e17-co328-Prediction-of-risks-associated-with-mass-corona-vaccination)
-3. [Department of computer engineering](http://www.ce.pdn.ac.lk/)
+3. [Azure DevOps Wiki Page](https://dev.azure.com/6sp-group10/COVID19-RISK%20PREDICTOR/_wiki/wikis/COVID19-RISK-PREDICTOR.wiki/1/COVID-19-RISK-PREDICTOR/)
+4. [Department of computer engineering](http://www.ce.pdn.ac.lk/)
 
 
 
